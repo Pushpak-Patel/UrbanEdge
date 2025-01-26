@@ -55,6 +55,8 @@ export default function Search() {
             const data = await res.json();
             if(data.length > 8){
               setShowMore(true);
+            }else{
+              setShowMore(false);
             }
             setListings(data);
             setLoading(false);

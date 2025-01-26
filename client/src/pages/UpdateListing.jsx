@@ -107,7 +107,7 @@ import {
     };
   
     const handleChange = (e) => {
-      if(e.target.id === 'sell' || e.target.id === 'rent'){
+      if(e.target.id === 'sale' || e.target.id === 'rent'){
           setFormData({
               ...formData,
               type: e.target.id
@@ -201,10 +201,10 @@ import {
               <div className="flex gap-1">
                 <input
                   type="checkbox"
-                  id="sell"
+                  id="sale"
                   className="w-4"
                   onChange={handleChange}
-                  checked={formData.type === "sell"}
+                  checked={formData.type === "sale"}
                 />
                 <span>Sell</span>
               </div>
