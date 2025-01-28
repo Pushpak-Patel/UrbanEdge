@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import { app } from "../firebase.js";
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { set } from "mongoose";
+// import { set } from "mongoose";
 
 export default function CreateListing() {
   const {currentUser} = useSelector(state => state.user);
