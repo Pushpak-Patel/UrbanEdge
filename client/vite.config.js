@@ -13,15 +13,8 @@ export default defineConfig({
   },
   plugins: [react()],
   build: {
-    target: 'esnext', // Ensure modern module resolution
-    outDir: 'dist',
     rollupOptions: {
       external: ['react', 'react-dom'],
-    },
-  },
-  resolve: {
-    alias: {
-      react: 'react',
     },
   },
 });
