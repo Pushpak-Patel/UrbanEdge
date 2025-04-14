@@ -10,7 +10,7 @@ export default function Search() {
     parking: false,
     furnished: false,
     offer: false,
-    sort: "created_at",
+    sort: "createdAt",
     order: "desc"
   });
 
@@ -89,7 +89,7 @@ export default function Search() {
       });
     }
     if(e.target.id === 'sort_order'){
-        const sort = e.target.value.split('_')[0] || 'created_at';
+        const sort = e.target.value.split('_')[0] || 'createdAt';
         const order = e.target.value.split('_')[1] || 'desc';
         setSidebardata({ ...sidebardata, sort, order });
     }
@@ -209,7 +209,7 @@ export default function Search() {
             <label className="font-semibold">Sort:</label>
             <select
               onChange={handleChange}
-              defaultValue={"created_at_desc"}
+              defaultValue={"createdAt_desc"}
               id="sort_order"
               className="border rounded-lg p-1"
             >
